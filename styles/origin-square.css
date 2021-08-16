@@ -1,0 +1,98 @@
+
+#blockCenter{
+    display: none;
+    border-style: solid; /* delete when done */
+}
+.couleur1 {
+    background-color: #8bc03d;
+}
+
+.couleur2 {
+    background-color:#3396f8;
+}
+
+.couleur3 {
+    background-color:#f96764;
+}
+
+.couleur4 {
+    background-color: #fe9832;
+}
+
+.couleur5 {
+    background-color: #8f91d7;
+}
+.couleur6 {
+    background-color: #33c763;
+}
+.couleur7 {
+    background-color:#f9c30f;
+}
+
+/*les couleurs dans les id CSS sont à supprimer*/
+#redSquare {
+    width: 20rem;
+    height: 20rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: rotate(0deg) translateX(0rem) translateY(10rem);
+    position: relative;
+}
+
+#blueParallelogram {
+    width: 35rem;
+    height:10rem;
+    clip-path: polygon(28% 0%, 86% 0%, 57% 100%, 0% 100%);
+    position: relative;
+    transform: rotate(0deg) translateX(10rem) translateY(-20rem);
+}
+
+#blueParallelogram:after {
+    content: '';
+    border-bottom : 50px solid;
+    border-right  : 20px solid transparent;
+    border-left   : 20px solid transparent;
+    position : relative;
+    transform: rotate(0deg) translateX(20rem) translateY(-20rem);
+}
+
+#greenSmallTriangle {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    transform: rotate(45deg);
+    transform: translateX(0rem);
+}
+
+#blueTriangle {
+    width: 10rem;
+    height: 20rem;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    position: relative;
+    transform: rotate(0deg) translateX(0rem) translateY(20rem);
+}
+
+#orangeTriangle {
+    width: 20rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    position: relative;
+    transform: rotate(0deg) translateX(10rem) translateY(-10rem);
+}
+
+#bigGreenTriangle {
+    width: 40rem;
+    height: 20rem;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+    position: relative;
+    transform: rotate(0deg) translateX(0rem) translateY(0rem);
+}
+
+#bigYellowTriangle {
+    width: 20rem;
+    height: 40rem;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    position: relative;
+    transform: rotate(0deg) translateX(20rem) translateY(-20rem);
+}
