@@ -1,0 +1,97 @@
+#nav li{
+    display: inline-block;
+}
+
+#blockCenter{
+    position: absolute;
+    border-style: solid;
+}
+
+#greenSmallTriangle{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    background-color: #8bc03d;
+    transform: rotate(0deg) translateX(0rem);
+    top:0px;
+    left:0px;
+}
+
+#blueTriangle {
+    width: 10rem;
+    height: 20rem;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color:#3396f8;
+    position: relative;
+    transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    top:0px;
+    left:0px;
+}
+
+#redSquare {
+    width: 20rem;
+    height: 20rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color:#f96764;
+    transform: rotate(0deg) translateX(0rem) translateY(-30rem);
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+#orangeTriangle {
+    width: 20rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background-color: #fe9832;
+    position: relative;
+    transform: rotate(0deg) translateX(10rem) translateY(-50rem);
+    top:0px;
+    left:0px;
+}
+
+
+#blueParallelogram {
+    width: 35rem;
+    height:10rem;
+    clip-path: polygon(28% 0%, 86% 0%, 57% 100%, 0% 100%);
+    background-color: #8f91d7;
+    position: relative;
+    transform: rotate(0deg) translateX(10rem) translateY(-70rem);
+    top:0px;
+    left:0px;
+}
+
+#blueParallelogram:after {
+    content: '';
+    border-bottom : 50px solid #8f91d7;
+    border-right  : 20px solid transparent;
+    border-left   : 20px solid transparent;
+    position : relative;
+    transform: rotate(0deg) translateX(10rem) translateY(-70rem);
+}
+
+#bigGreenTriangle {
+    width: 40rem;
+    height: 20rem;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #33c763;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(0deg) translateX(0rem) translateY(-60rem);
+    top:0px;
+    left:0px;
+}
+
+#bigYellowTriangle {
+    width: 20rem;
+    height: 40rem;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    background-color:#f9c30f;
+    position: relative;
+    transform: rotate(0deg) translateX(20rem) translateY(-100rem);
+    margin:0;
+    top:0px;
+    left:0px;
+}
