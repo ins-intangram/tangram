@@ -53,17 +53,19 @@
     /*menu inside burger*/
     .nav {
         display: none;
-        background-color: rgba(255, 166, 0, 0.575);
+        /*background-color: rgb(255, 255, 255);*/
+        background: #ffffff;
         height: auto;
         width: 50%;
         top: 40px;
         left: 0;
         position: fixed;
+        box-shadow: 0px 0px 10px #aaaaaa;
     }
     
     .nav.visible {
         display: block;
-        border-radius: 10% 0 10% 0 ;
+        /*border-radius: 10% 0 10% 0 ;*/
     }    
     
     ul {
@@ -89,5 +91,28 @@
     }
     
     /* end menu */
+
+    @media screen and (min-width: 992px) {
+
+    .nav {
+        display: block; 
+        width: 100%;   
+        top: 0; 
+        padding: .5em 0;      
+    }
+
+    .button_burger {        
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        margin: 0;
+    }    
+}
 
 
