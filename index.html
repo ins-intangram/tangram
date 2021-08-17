@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tangram</title>
+    <link href="Stylesheets/index.css" rel="stylesheet" type="text/css">
+    <link id="change-style" href="Stylesheets/origin-square.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <nav>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-    </nav>
 
-    <div>
-        <div class=".petitTriangleVert"></div>
-        <div class=""></div>
-        <div class="figure"></div>
-        <div class="figure"></div>
-        <div class="figure"></div>
-        <div class="figure"></div>
+<body>
+
+    <header>
+        <div class="button_burger">
+            <span></span>
+        </div>
+        <div class="nav">
+                    <button onclick="swap('Stylesheets/origin-square.css')"> Originale</button>
+                    <button onclick="swap('Stylesheets/bol.css')"> Bol</button>
+                    <button onclick="swap('Stylesheets/pipe.css')"> Pipe</button>
+                    <button onclick="swap('Stylesheets/voilier.css')"> Voilier</button>
+                    <button onclick="swap('Stylesheets/pistolet.css')"> Pistolet</button>
+                    <button onclick="swap('Stylesheets/lion.css')"> Lion</button>
+                    <button onclick="swap('Stylesheets/bonhomme.css')"> Bonhomme</button>
+                    <button onclick="swap('Stylesheets/ours.css')"> Ours</button>
+                    <button onclick="swap('Stylesheets/style8.css')"> style8</button>
+        </div>
+
+    </header>
+    <div id="block-page">
+        <div id="main">
+            <div id="greenSmallTriangle" class="figure greenSmallTriangle"></div>
+            <div id="blue-Triangle" class="figure blue-Triangle"></div>
+            <div id="red-Square" class="figure red-Square"></div>
+            <div id="orange-Triangle" class="figure orange-Triangle"></div>
+            <div id="blue-Parallelogram" class="figure blue-Parallelogram"></div>
+            <div id="bigGreen-Triangle" class="figure bigGreen-Triangle"></div>
+            <div id="bigYellow-Triangle" class="figure bigYellow-Triangle"></div>
+        </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
