@@ -7,15 +7,8 @@ burger.addEventListener("click", () => {
     nav.classList.toggle("visible");
 })
 
-/*// close menu
-burger.addEventListener("click", () => {
-    burger.classList.remove("active");
-    nav.classList.remove("visible");
-})*/
-
 // buttons animation 
-
 function swap(cssFile) {
-    var link = document.getElementById("style")
+    var link = document.getElementById("change-style")
     link.href = cssFile;
 }

@@ -5,77 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="Stylesheets/index.css" rel="stylesheet">
-    <!--<link href="Stylesheets/origin-square.css" rel="stylesheet" >-->
-    <link href="Stylesheets/style2.css" id = "style" rel="stylesheet" type="text/css"> 
+    <link href="Stylesheets/index.css" rel="stylesheet">    
+    <link rel="stylesheet" id="change-style" href="Stylesheets/square.css">   
 </head>
-<body>
+<body>     
     <header>
         <div class="button_burger">
             <span></span>
         </div>
         <div class="nav">
             <ul>
-                <li>
-                    <button onclick="swap('Stylesheets/origin-square.css')"> Index</button>
-                </li>
-                <li>
-                    <button onclick="swap('Stylesheets/style2.css')"> Square</button>
-                </li>
-                <li>
-                    <button onclick="swap('Stylesheets/style3.css')"> Fusée</button>
-                </li>
-                <li>
-                    <button onclick="swap('Stylesheets/style3.css')"> Fusée</button>
-                </li>
-                <li>
-                    <button>
-                        figure3
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        figure4
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        figure5
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        figure6
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        figure7
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        figure8
-                    </button>
-                </li>
+                <button onclick="swap('Stylesheets/index.css')"> Index </button>
+                <button onclick="swap('Stylesheets/square.css')"> Square </button>
+                <button onclick="swap('Stylesheets/poule.css')"> poule </button>                              
             </ul>
         </div>
     </header>
-
-    <main>
-        <div id="blockCenter">
-            <div class="figure">
-                <div id="greenSmallTriangle" class="couleur1"></div>
-                <div id="blueTriangle" class="couleur2"></div>
-                <div id="redSquare" class="couleur3"></div>
-                <div id="orangeTriangle" class="couleur4"></div>
-                <div id="blueParallelogram" class="couleur5"></div>
-                <div id="bigGreenTriangle" class="couleur6"></div>
-                <div id="bigYellowTriangle" class="couleur7"></div>
-            </div>
-        </div>           
-    </main>
-    <script src="script/script.js"></script>
+    <div id="block-page">
+        <div id="main">
+                <div id="greenSmallTriangle" class="figure greenSmallTriangle"></div>
+                <div id="blue-Triangle" class="figure blue-Triangle"></div>
+                <div id="red-Square" class="figure red-Square"></div>
+                <div id="orange-Triangle" class="figure orange-Triangle"></div>
+                <div id="blue-Parallelogram" class="figure blue-Parallelogram"></div>
+                <div id="bigGreen-Triangle" class="figure bigGreen-Triangle"></div>
+                <div id="bigYellow-Triangle" class="figure bigYellow-Triangle"></div> 
+        </div>
+    </div>
+    
+    <!--<script src="index.js"></script>-->
+    <script src="script/animation.js"></script>
 </body>
 </html>
 

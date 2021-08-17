@@ -4,7 +4,11 @@
     height: 22px;
     position: fixed;
     top: auto;
-    }
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
     
 .button_burger span {
     width: 70%;
@@ -35,7 +39,7 @@
     transform: translateY(10px);
 }
 
-    /*button animation*/
+/*button animation*/
 .button_burger.active span {
     background-color: transparent;
 }
@@ -65,22 +69,21 @@
 }
     
 .nav.visible {
-    display: block;
-    /*border-radius: 10% 0 10% 0 ;*/
+    display: block;    
 }    
 
 ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 50px 25px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-li {
-    margin: 20px;
-}
-
-button {
+button {    
     width: 100%;
     font-size: 20px;
     text-decoration: none;
@@ -90,11 +93,93 @@ button {
     color: white;
     border-color: white;
 }
-
 /* end menu */
 
-@media screen and (min-width: 992px) {
+#block-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure {
+    position: absolute;
+}
+#bigYellow-Triangle{
+    width: 10rem;
+    height: 20rem;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    background-color:#f9c30f;
+}
+#bigGreen-Triangle{
+    width: 20rem;
+    height: 10rem;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #33c763;
+}
+#blue-Triangle{
+    width: 5rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color:#3396f8;
+}
+#greenSmallTriangle{
+    width: 10rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    background-color: #8bc03d;
+}
+#red-Square{
+    width: 10rem;
+    height: 10rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color:#f96764;
+}
+#blue-Parallelogram{
+    width: 17.5rem;
+    height:5rem;
+    clip-path: polygon(28.5% 0%, 85.6% 0%, 57.5% 100%, 0% 100%);
+    background-color: #8f91d7;
+}
+#orange-Triangle{
+    width: 10rem;
+    height: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background-color: #fe9832;
+}
+#blue-Triangle{
+    width: 5rem;
+    height: 10rem;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color:#3396f8;
+}
 
+@media screen and (max-width: 1024px) {
+    #main {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        transform: scale(75%);
+    }
+}
+@media screen and (max-width: 320px) {
+    #main {
+        transform: scale(35%);
+    }
+}
+
+@media screen and (min-width: 992px) {
     .nav {
         display: block; 
         width: 100%;   
@@ -108,11 +193,14 @@ button {
 
     ul {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-around; 
+        padding: 0; 
+        height: auto;       
     }
 
-    li {
-        margin: 0;
+    button {
+        margin: 20px;       
     }    
 }
 
