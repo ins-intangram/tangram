@@ -27,3 +27,4 @@
     transform: translateX(-1rem) translateY(0rem) rotate(270deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
 }
+
