@@ -47,6 +47,10 @@
         transform: translateY(0px) rotateZ(-45deg);
         background-color: rgba(255, 166, 0, 0.575);
     }
+    
+    .button_burger.active span {
+        background-color: transparent;
+    }
     /*menu inside burger*/
     
     .nav {
