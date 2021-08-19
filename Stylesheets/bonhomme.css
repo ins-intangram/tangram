@@ -1,4 +1,5 @@
 .greenSmallTriangle {
+
     transform: translateX(6em) translateY(-7em) rotate(90deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
