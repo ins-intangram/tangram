@@ -4,31 +4,37 @@
 }
 
 .blue-Triangle {
+
     transform: translateX(4.15em) translateY(-5.3em) rotate(135deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
 .red-Square {
+
     transform: translate(3.2em, 21.2em) rotate(44deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
 .orange-Triangle {
+
     transform: translateX(5em) translateY(30em) rotate(315deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
 .blue-Parallelogram {
+
     transform: translateX(-1.31em) translateY(13.35em) rotate(224deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
 .bigGreen-Triangle {
+
     transform: translateX(6.1em) translateY(7em) rotate(134deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
 .bigYellow-Triangle {
+
     transform: translateX(10.1em) translateY(14em) rotate(134deg);
     transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
