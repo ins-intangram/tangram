@@ -1,33 +1,34 @@
-.bigYellow-Triangle{
-    transform: translateX(-14.9rem) translateY(-3rem) rotate(405deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
-}
-.bigGreen-Triangle{
-    transform: translateX(-22rem) translateY(10rem) rotate(495deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+.bigYellow-Triangle {
+    transform: translateX(-11.5em) translateY(-3em) rotate(405deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
-.blue-Triangle{
-    transform: translateX(20.3rem) translateY(-3.3rem) rotate(405deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+.bigGreen-Triangle {
+    transform: translateX(-18.5em) translateY(10em) rotate(495deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
-.red-Square{
-    transform: translate(-0.6rem,-3rem) rotate(45deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+.blue-Triangle {
+    transform: translateX(23.3em) translateY(-3.3em) rotate(405deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
-.blue-Parallelogram{
-    transform: translateX(13.8rem) translateY(-4rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
-    
+.red-Square {
+    transform: translate(2.5em, -2.95em) rotate(45deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
+
+.blue-Parallelogram {
+    transform: translateX(16.8em) translateY(-4em) rotate(360deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
+}
+
 .orange-Triangle {
-    transform: translateX(4.7rem) translateY(-4.7rem) rotate(495deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
-}
-.greenSmallTriangle {
-    transform: translateX(-9.2rem) translateY(-1.6rem) rotate(180deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transform: translateX(7.8em) translateY(-4.75em) rotate(495deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
 }
 
+.greenSmallTriangle {
+    transform: translateX(-6em) translateY(-1.6em) rotate(180deg);
+    transition: transform 1s cubic-bezier(.45, -1.12, .35, 1.78);
+}
