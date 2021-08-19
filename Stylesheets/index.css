@@ -7,8 +7,9 @@ html {
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
+
 
 /*button burger creation middle bar*/
 
@@ -113,8 +114,6 @@ button {
 /* end menu */
 
 #block-page {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
