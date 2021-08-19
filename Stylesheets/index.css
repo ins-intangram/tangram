@@ -24,7 +24,7 @@ body {
 .button_burger.active {
     position: absolute;
     top: 1em;
-    right: 50%;
+    left: 50%;
 }
 
 .button_burger span {
@@ -38,7 +38,6 @@ body {
     transition: background-color 0.5s ease-in-out;
 }
 
-
 /*top / bottom burger bar icon*/
 
 .button_burger span::before,
@@ -47,29 +46,29 @@ body {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: #01113d;
     transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
 }
-
 .button_burger span::before {
-    transform: translateY(-10px);
+    transform: translateY(-10px);   
 }
-
 .button_burger span::after {
-    transform: translateY(10px);
+    transform: translateY(10px);   
 }
-
 
 /*button animation*/
 
 .button_burger.active span::before {
     transform: translateY(0px) rotateZ(45deg);
-    background-color: rgba(255, 166, 0, 0.575);
+    background-color: #01113d;
+    border-radius: 5px;
 }
 
 .button_burger.active span::after {
     transform: translateY(0px) rotateZ(-45deg);
-    background-color: rgba(255, 166, 0, 0.575);
+    background-color: #01113d;
+    border-radius: 5px;
 }
 
 .button_burger.active span {
@@ -80,15 +79,19 @@ body {
 /*menu inside burger*/
 
 .nav {
-    display: block;
-    position: absolute;
-    opacity: 0.8;
-    background: #ffffff;
-    height: auto;
-    width: 50%;
-    top: 40px;
+    position: absolute;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4em 1em 0;
+    column-gap: 2em;       
+    height: 100vh;
+    width: 57%;
+    top: 0;
     left: 0;
-    box-shadow: 0px 0px 10px #aaaaaa;
+    background: #ffffff8e;
+    box-shadow: 0px 0px 10px #aaaaaa71;
     z-index: 1;
     visibility: hidden;
 }
@@ -98,29 +101,33 @@ body {
 }
 
 button {
-    width: 90%;
-    font-size: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    background-color: orange;
-    color: white;
-    border-color: white;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 75px;      
+    padding: 10px; 
+    background-color: #ffffff;
+    border: none;   
+    box-shadow: 1px 1px 5px #aaaaaa71;
+    border-radius: 5px;
+}
+
+.img-btn {
+    width: 100%;
 }
 
 
 /* end menu */
 
 #block-page {
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    /*height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 #main {
     width: 80vw;
     height: 80vh;
@@ -128,11 +135,9 @@ button {
     justify-content: center;
     align-items: center;
 }
-
 .figure {
     position: absolute;
 }
-
 #greenSmallTriangle {
     width: 10em;
     height: 10em;
@@ -188,6 +193,7 @@ button {
 @media screen and (min-width: 992px) {
     .nav {
         display: flex;
+        align-items: center;
         width: 100%;
         height: 100px;
         padding: 0;
@@ -199,6 +205,11 @@ button {
     .button_burger {
         display: none;
     }
+
+    button {
+        width: 70px;
+        height: 70px;
+    }    
 }
 
 
