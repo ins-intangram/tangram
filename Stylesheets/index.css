@@ -24,7 +24,8 @@ body {
 .button_burger.active {
     position: absolute;
     top: 1em;
-    left: 60%;
+    left: inherit;
+    right: 1em;
 }
 
 .button_burger span {
