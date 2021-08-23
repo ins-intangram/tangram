@@ -85,7 +85,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 1em; 
     padding: 1em;          
     height: 100vh;
